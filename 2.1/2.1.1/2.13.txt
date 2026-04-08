@@ -1,0 +1,22 @@
+int bis(int x, int m)
+{
+    return x | m;
+};
+int bic(int x, int m)
+{
+    return x & ~m;
+};
+
+int bool_or(int x, int y)
+{
+    int result = bis(x, y);
+    return result;
+}
+
+int bool_xor(int x, int y)
+{
+    int f = bic(x, y);
+    int s = bic(y, x);
+    int result = bis(f, s);
+    return result;
+}

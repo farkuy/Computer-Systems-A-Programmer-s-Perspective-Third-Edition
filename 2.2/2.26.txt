@@ -1,0 +1,12 @@
+1) В случаях когда t будет больше s 
+2) Из-за беззнакового перевода он станет положительным и даст не верный ответ
+3)
+    int strlonger(char *s, char *t) {
+        return (int) (strlen(s) - strlen(t)) > 0;
+    }
+
+    Или еще лучше
+
+    int strlonger(char *s, char *t) {
+        return strlen(s) > strlen(t);
+    }
